@@ -1,4 +1,3 @@
-<?php header('Content-Type: text/html; charset=UTF-8'); ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -16,8 +15,8 @@
 
 <header class="site-header">
   <div class="container nav">
-    <a href="index.php" class="logo"><span class="logo-mark">L</span><span>LustraAI</span></a>
-    <a href="index.php" class="btn btn-ghost">Voltar</a>
+    <a href="index.html" class="logo"><span class="logo-mark">L</span><span>LustraAI</span></a>
+    <a href="index.html" class="btn btn-ghost">Voltar</a>
   </div>
 </header>
 
@@ -29,7 +28,7 @@
     <p>Bem-vindo ao LustraAI. Ao acessar ou utilizar nossos serviços, você concorda com os termos descritos abaixo. Leia com atenção antes de criar sua conta.</p>
 
     <h2>1. Aceitação dos termos</h2>
-    <p>Ao utilizar o LustraAI, o usuário declara ter capacidade legal e concordar integralmente com estes Termos de Uso e com a nossa <a href="privacidade.php">Política de Privacidade</a>.</p>
+    <p>Ao utilizar o LustraAI, o usuário declara ter capacidade legal e concordar integralmente com estes Termos de Uso e com a nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
 
     <h2>2. Descrição do serviço</h2>
     <p>O LustraAI é um assistente de inteligência artificial em português que auxilia na revisão de textos, resumos, planejamento de tarefas e esclarecimento de dúvidas. O serviço é ofertado pela internet e está sujeito a manutenções programadas.</p>
@@ -78,9 +77,11 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p>&copy; <?= date('Y') ?> LustraAI · <a href="privacidade.php">Privacidade</a> · <a href="termos.php">Termos</a> · <a href="contato.php">Contato</a></p>
+    <p>&copy; <span id="yr"></span> LustraAI · <a href="privacidade.html">Privacidade</a> · <a href="termos.html">Termos</a> · <a href="contato.html">Contato</a></p>
   </div>
 </footer>
 
+
+<script>var e=document.getElementById("yr");if(e)e.textContent=new Date().getFullYear();</script>
 </body>
 </html>

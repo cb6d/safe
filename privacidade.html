@@ -1,4 +1,3 @@
-<?php header('Content-Type: text/html; charset=UTF-8'); ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -16,8 +15,8 @@
 
 <header class="site-header">
   <div class="container nav">
-    <a href="index.php" class="logo"><span class="logo-mark">L</span><span>LustraAI</span></a>
-    <a href="index.php" class="btn btn-ghost">Voltar</a>
+    <a href="index.html" class="logo"><span class="logo-mark">L</span><span>LustraAI</span></a>
+    <a href="index.html" class="btn btn-ghost">Voltar</a>
   </div>
 </header>
 
@@ -80,9 +79,11 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p>&copy; <?= date('Y') ?> LustraAI · <a href="privacidade.php">Privacidade</a> · <a href="termos.php">Termos</a> · <a href="contato.php">Contato</a></p>
+    <p>&copy; <span id="yr"></span> LustraAI · <a href="privacidade.html">Privacidade</a> · <a href="termos.html">Termos</a> · <a href="contato.html">Contato</a></p>
   </div>
 </footer>
 
+
+<script>var e=document.getElementById("yr");if(e)e.textContent=new Date().getFullYear();</script>
 </body>
 </html>

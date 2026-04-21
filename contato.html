@@ -1,7 +1,3 @@
-<?php
-header('Content-Type: text/html; charset=UTF-8');
-$sent = isset($_GET['enviado']) && $_GET['enviado'] === '1';
-?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -19,8 +15,8 @@ $sent = isset($_GET['enviado']) && $_GET['enviado'] === '1';
 
 <header class="site-header">
   <div class="container nav">
-    <a href="index.php" class="logo"><span class="logo-mark">L</span><span>LustraAI</span></a>
-    <a href="index.php" class="btn btn-ghost">Voltar</a>
+    <a href="index.html" class="logo"><span class="logo-mark">L</span><span>LustraAI</span></a>
+    <a href="index.html" class="btn btn-ghost">Voltar</a>
   </div>
 </header>
 
@@ -38,13 +34,11 @@ $sent = isset($_GET['enviado']) && $_GET['enviado'] === '1';
       <li><strong>Privacidade / LGPD:</strong> <a href="mailto:privacidade@lustrachat.com">privacidade@lustrachat.com</a></li>
     </ul>
 
-    <?php if ($sent): ?>
-      <div class="form-card success-box">
+          <div id="success-box" class="form-card success-box" style="display:none">
         <h2>Mensagem enviada</h2>
         <p>Obrigado pelo contato! Nossa equipe responde por e-mail em até 2 dias úteis.</p>
       </div>
-    <?php else: ?>
-      <form class="form-card" method="post" action="contato.php?enviado=1" novalidate>
+          <form id="contact-form" class="form-card" novalidate>
         <div class="form-row">
           <label for="nome">Seu nome</label>
           <input type="text" id="nome" name="nome" required placeholder="Como podemos te chamar">
@@ -63,8 +57,7 @@ $sent = isset($_GET['enviado']) && $_GET['enviado'] === '1';
         </div>
         <button type="submit" class="btn-primary">Enviar mensagem</button>
       </form>
-    <?php endif; ?>
-
+    
     <h2>Horário de atendimento</h2>
     <p>Segunda a sexta-feira, das 9h às 18h (horário de Brasília). Mensagens enviadas fora desse período são respondidas no próximo dia útil.</p>
   </div>
@@ -72,9 +65,24 @@ $sent = isset($_GET['enviado']) && $_GET['enviado'] === '1';
 
 <footer class="site-footer">
   <div class="container">
-    <p>&copy; <?= date('Y') ?> LustraAI · <a href="privacidade.php">Privacidade</a> · <a href="termos.php">Termos</a> · <a href="contato.php">Contato</a></p>
+    <p>&copy; <span id="yr"></span> LustraAI · <a href="privacidade.html">Privacidade</a> · <a href="termos.html">Termos</a> · <a href="contato.html">Contato</a></p>
   </div>
 </footer>
 
+
+<script>
+var e=document.getElementById("yr");if(e)e.textContent=new Date().getFullYear();
+// Form submit → mostra success box
+(function(){
+  var form=document.getElementById('contact-form');
+  var box=document.getElementById('success-box');
+  if(!form||!box) return;
+  form.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    form.style.display='none';
+    box.style.display='block';
+  });
+})();
+</script>
 </body>
 </html>
