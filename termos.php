@@ -1,0 +1,86 @@
+<?php header('Content-Type: text/html; charset=UTF-8'); ?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Termos de Uso do LustraAI — conheça as regras e condições para utilização do assistente de IA.">
+<title>Termos de Uso — LustraAI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/legal.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.php" class="logo"><span class="logo-mark">L</span><span>LustraAI</span></a>
+    <a href="index.php" class="btn btn-ghost">Voltar</a>
+  </div>
+</header>
+
+<main class="legal">
+  <div class="container">
+    <h1>Termos de Uso</h1>
+    <p class="updated">Última atualização: <?= date('d/m/Y') ?></p>
+
+    <p>Bem-vindo ao LustraAI. Ao acessar ou utilizar nossos serviços, você concorda com os termos descritos abaixo. Leia com atenção antes de criar sua conta.</p>
+
+    <h2>1. Aceitação dos termos</h2>
+    <p>Ao utilizar o LustraAI, o usuário declara ter capacidade legal e concordar integralmente com estes Termos de Uso e com a nossa <a href="privacidade.php">Política de Privacidade</a>.</p>
+
+    <h2>2. Descrição do serviço</h2>
+    <p>O LustraAI é um assistente de inteligência artificial em português que auxilia na revisão de textos, resumos, planejamento de tarefas e esclarecimento de dúvidas. O serviço é ofertado pela internet e está sujeito a manutenções programadas.</p>
+
+    <h2>3. Cadastro e conta</h2>
+    <ul>
+      <li>O usuário deve fornecer dados verdadeiros e atualizados no cadastro;</li>
+      <li>A senha é pessoal e intransferível;</li>
+      <li>É proibido criar contas em nome de terceiros sem autorização.</li>
+    </ul>
+
+    <h2>4. Uso permitido</h2>
+    <p>O LustraAI pode ser utilizado apenas para finalidades lícitas, respeitando a legislação brasileira. É expressamente proibido:</p>
+    <ul>
+      <li>Utilizar a plataforma para disseminar conteúdo ilegal, ofensivo, discriminatório ou que viole direitos de terceiros;</li>
+      <li>Tentar acessar sistemas, dados ou contas de outros usuários;</li>
+      <li>Realizar engenharia reversa ou comercializar o serviço sem autorização;</li>
+      <li>Utilizar os resultados da IA para enganar terceiros ou cometer fraudes.</li>
+    </ul>
+
+    <h2>5. Propriedade intelectual</h2>
+    <p>A marca, identidade visual, textos e código-fonte do LustraAI são de propriedade exclusiva da empresa. Os conteúdos gerados pelo usuário em suas conversas permanecem de sua titularidade.</p>
+
+    <h2>6. Responsabilidades</h2>
+    <p>O LustraAI é uma ferramenta de apoio. O usuário é responsável por conferir, validar e utilizar as respostas geradas com bom senso. Não nos responsabilizamos por decisões tomadas com base exclusiva nas saídas da IA, especialmente em contextos acadêmicos, jurídicos, médicos ou financeiros.</p>
+
+    <h2>7. Planos e cobranças</h2>
+    <p>Oferecemos um plano gratuito com recursos essenciais. Planos pagos, quando disponíveis, terão suas condições (preço, ciclo e cancelamento) apresentadas claramente antes da contratação.</p>
+
+    <h2>8. Encerramento</h2>
+    <p>O usuário pode encerrar sua conta a qualquer momento. Reservamo-nos o direito de suspender ou encerrar contas que violem estes termos, mediante aviso, salvo em casos graves que demandem ação imediata.</p>
+
+    <h2>9. Limitação de responsabilidade</h2>
+    <p>Na máxima extensão permitida pela lei, o LustraAI não se responsabiliza por lucros cessantes, perdas indiretas ou danos decorrentes da indisponibilidade temporária do serviço.</p>
+
+    <h2>10. Alterações</h2>
+    <p>Estes termos podem ser atualizados a qualquer tempo. Alterações relevantes serão comunicadas aos usuários cadastrados por e-mail ou aviso na plataforma.</p>
+
+    <h2>11. Foro</h2>
+    <p>Fica eleito o foro da cidade de São Paulo/SP para dirimir quaisquer controvérsias oriundas destes Termos, renunciando-se a qualquer outro, por mais privilegiado que seja.</p>
+
+    <h2>12. Contato</h2>
+    <p>Dúvidas sobre estes termos podem ser enviadas para <a href="mailto:contato@lustrachat.com">contato@lustrachat.com</a>.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <?= date('Y') ?> LustraAI · <a href="privacidade.php">Privacidade</a> · <a href="termos.php">Termos</a> · <a href="contato.php">Contato</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

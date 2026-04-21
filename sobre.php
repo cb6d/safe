@@ -1,0 +1,57 @@
+<?php header('Content-Type: text/html; charset=UTF-8'); ?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Conheça a história do LustraAI — o assistente de inteligência artificial criado para ajudar brasileiros na rotina de estudos e trabalho.">
+<title>Sobre nós — LustraAI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/legal.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.php" class="logo"><span class="logo-mark">L</span><span>LustraAI</span></a>
+    <a href="index.php" class="btn btn-ghost">Voltar</a>
+  </div>
+</header>
+
+<main class="legal">
+  <div class="container">
+    <h1>Nossa história</h1>
+    <p class="updated">Equipe LustraAI</p>
+
+    <p>O LustraAI nasceu em 2024 a partir de uma pergunta simples: por que usar ferramentas de inteligência artificial em inglês se a maioria dos brasileiros estuda, trabalha e pensa em português? Foi dessa inquietação que surgiu a ideia de construir um assistente feito sob medida para o nosso idioma e para a nossa realidade.</p>
+
+    <h2>O que nos move</h2>
+    <p>Acreditamos que a tecnologia deve ser uma ponte, não uma barreira. Por isso, investimos em uma experiência simples, direta e acessível — capaz de ajudar um estudante do interior do Brasil tanto quanto um profissional em grande centro urbano. O LustraAI não substitui o raciocínio, mas tira atritos do caminho de quem quer aprender e produzir mais.</p>
+
+    <h2>Para quem é</h2>
+    <p>Nossa comunidade é formada por estudantes de Ensino Médio preparando-se para o ENEM, universitários organizando trabalhos acadêmicos, profissionais de diversas áreas que usam a IA para revisar e-mails, escrever propostas e organizar agendas, além de curiosos que simplesmente gostam de aprender coisas novas.</p>
+
+    <h2>Nossos princípios</h2>
+    <ul>
+      <li><strong>Clareza antes de complexidade.</strong> Preferimos uma interface limpa a um painel cheio de botões.</li>
+      <li><strong>Privacidade como padrão.</strong> Seus dados pertencem a você — nossa função é protegê-los.</li>
+      <li><strong>Linguagem que respeita.</strong> Nada de respostas genéricas ou tradução literal; falamos a mesma língua do usuário.</li>
+      <li><strong>Evolução contínua.</strong> Cada conversa nos ajuda a melhorar o produto — com seu consentimento.</li>
+    </ul>
+
+    <h2>O futuro</h2>
+    <p>Seguimos aprimorando o LustraAI com novos recursos, modelos mais rápidos e integrações úteis para o estudante e profissional brasileiro. Se você tem sugestões, críticas ou simplesmente quer bater um papo, nossa porta está aberta em <a href="contato.php">contato@lustrachat.com</a>.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <?= date('Y') ?> LustraAI · <a href="privacidade.php">Privacidade</a> · <a href="termos.php">Termos</a> · <a href="contato.php">Contato</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
